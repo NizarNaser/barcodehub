@@ -11,9 +11,9 @@ import { ArticleType } from "@/lib/types";
 export const dynamic = "force-dynamic";
 
 type PageProps = {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 };
 
 
